@@ -60,7 +60,7 @@ html{
     color: #50ff79;
 }
 #inicio .contenido header .contenido-header .seleccionado{
-    color: #50ff79;
+    color: #fff;
 }
 #inicio .contenido .presentacion{
     max-width: 1100px;
@@ -107,6 +107,7 @@ html{
 }
 #inicio .contenido .presentacion a:hover{
     background-color: #50ff79;
+    color: #000;
 }
 #icono-nav{
     color: #fff;
@@ -177,7 +178,6 @@ html{
 }
 #sobremi .sobremi a:hover{
     background-color: #50ff79;
-    color: #fff;
 }
 
 /*ESTILOS DE MIS SERVICIOS*/
@@ -424,7 +424,6 @@ html{
 }
 #contacto .btn-enviar:hover{
     background-color: #50ff79;
-    color: #fff;
 }
 footer{
     background-color: #000;
