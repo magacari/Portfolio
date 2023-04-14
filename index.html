@@ -53,9 +53,8 @@
         </div>
         <div class="sobremi">
             <p class="titulo-seccion">Sobre Mi</p>
-            <h2>Hola, soy <span>Marcos Castillo</span></h2>
-            <h3>Desarrollador Web</h3>
-            <p>"Soy una persona apasionada por la curiosidad y el trabajo, tengo alta experiencía en el mundo del IT." </p>
+            <h2>Hola, soy <span>Marcos</span></h2>
+            <p>"Soy una persona apasionada por la curiosidad y el trabajo, tengo amplias experiencías en el mundo IT con más de 8 años en el rubro." </p>
             <a href="./document/Marcos Castillo.docx">Descargar CV</a>
         </div>
     </section>
@@ -189,8 +188,8 @@
                 <a href="https://magacari.github.io/TuTecnico/" target="_blank">
                 <img src="img/tutecnico.jpg" alt=""></a>
                 <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
+                    <h4>Tu Tecnico</h4>
+                    <p>Mi primer proyecto en desarrollo web</p>
                 </div>
             </div>
             <div class="proyecto">
@@ -198,21 +197,10 @@
                 <a href="https://magacari.github.io/E-commerce/" target="_blank">
                 <img src="img/ecommerce.jpg" alt=""></a>
                 <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
+                    <h4>E-commerce</h4>
                     <p>Diseño Web</p>
                 </div>
             </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <a href="" target="_blank">
-                <img src="img/simuladordecarga.jpg" alt="">
-                <div class="info"></a>
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
-        </div>
-        <div class="fila">
             <div class="proyecto">
                 <div class="overlay"></div>
                 <img src="img/carrito.jpg" alt="">
@@ -221,44 +209,50 @@
                     <p>Diseño Web</p>
                 </div>
             </div>
-            <div class="proyecto">
+            </div>
+        </div>
+        <div class="fila">
+            
+            <!-- <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto5.jpg" alt="">
-                <div class="info">
+                <a href="" target="_blank">
+                <img src="img/simuladordecarga.jpg" alt="">
+                <div class="info"></a>
                     <h4>Descripcion del Proyecto</h4>
                     <p>Diseño Web</p>
-                </div>
-            </div>
-            <div class="proyecto">
-                <div class="overlay"></div>
-                <img src="img/proyecto6.jpg" alt="">
-                <div class="info">
-                    <h4>Descripcion del Proyecto</h4>
-                    <p>Diseño Web</p>
-                </div>
-            </div>
+                </div> -->
         </div>
     </section>
 
     <!-- SECTION CONTACTO -->
     <section id="contacto">
-        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <h2 class="titulo-seccion"> Contacto</h2>
         <div class="contenedor-form">
-            <form action="">
+            <form id="form" action="">
                 <div class="fila mitad">
-                    <input type="text" placeholder="Nombre Completo" class="input-mitad">
-                    <input type="text" placeholder="Direccion de email" class="input-mitad">
+                    <input type="text" name="name" placeholder="Nombre y Apellido" class="input-mitad" required>
+                    <input type="text" name="email" placeholder="Correo" class="input-mitad" required>
                 </div>
                 <div class="fila">
-                    <input type="text" placeholder="Tema..." class="input-full">
+                    <input type="text" name="phone" placeholder="Telefono" onKeyPress="return SoloNros(event)" class="input-full" required>
                 </div>
                 <div class="fila">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full"></textarea>
+                    <textarea name="message"  cols="30" rows="10" placeholder="Escriba su mensaje"class="input-full"></textarea required>
                 </div>
-
-                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+                
+                <input type="submit" id="button" value="Enviar Mensaje" class="btn-enviar" >
             </form>
+            <!-- script de API emailjs -->
+            <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            emailjs.init('LqqhG_rkKBLVVlH9b')
+            </script>
         </div>
+        
+        <!--  script de archivo "contacto.js" -->
+        <script src="./js/contacto.js"></script>
     </section>
 
     <!-- SECTION FOOTER -->
@@ -272,6 +266,6 @@
         </div>
     </footer>
 
-    <script src="index.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
