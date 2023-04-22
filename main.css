@@ -328,7 +328,7 @@ html{
 }
 .contenedor-skills .skill .barra .barra-progreso3{
     background-color: #fff;
-    width: 70%;
+    width: 90%;
     height: 6px;
     animation: progreso3 2s forwards;
 }
@@ -350,7 +350,7 @@ html{
 }
 @keyframes progreso3{
     0%{width: 0;}
-    100%{width: 70%;}
+    100%{width: 90%;}
 }
 @keyframes progreso4{
     0%{width: 0;}
