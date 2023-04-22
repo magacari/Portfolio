@@ -530,8 +530,16 @@ footer a{
     }
     #servicios .fila{
         display: block;
+        margin-bottom: 1px;
     }
     #servicios .fila .servicio {
+        margin: 10px auto;
+    }
+    #servicios .fila2{
+        margin-top: 3px;
+        display: block;
+    }
+    #servicios .fila2 .servicio2 {
         margin: 10px auto;
     }
     #contenedor-skills{
